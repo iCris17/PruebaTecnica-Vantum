@@ -1,4 +1,4 @@
-#### PruebaTecnica-Vantum
+# PruebaTecnica-Vantum
 
 ### Se usaron las siguientes tecnologías para el desarrollo de esta aplicación:
 - Para el back-end: FastAPI
@@ -6,9 +6,9 @@
 ### Se usaron los IDE's:
 - Para el back-end: PyCharm
 
-### ¿Cómo echar a andar el proyecto?
-## Back-end:
-# Tomar en cuenta que estos pasos son totalmente efectivos en PyCharm 2024.3.4
+## ¿Cómo echar a andar el proyecto?
+### Back-end:
+#### Tomar en cuenta que estos pasos son totalmente efectivos en PyCharm 2024.3.4
 - En la esquina inferior derecha, se puede elegir el interpretador Python. Dar click en "Interpreter Settings..."
 - Observamos que nos aparece un listado de los interpretadores (Python Interpreter) disponibles. Hacer click a la opción (al lado derecho del listado) que dice: "Add Interpreter"
 - En Environment, ponemos "Generate New", y en Type, ponemos "Virtualenv". En Base python y Location no debería de modificarse nada. Se da OK.
