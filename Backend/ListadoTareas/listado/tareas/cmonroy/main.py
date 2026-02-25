@@ -1,10 +1,21 @@
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from starlette.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 from listado.tareas.cmonroy.routers import tareas
 
 api = FastAPI()
+
+api.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 api.include_router(tareas.router, prefix='/tareas', tags=['tareas'])
 @api.get('/')
